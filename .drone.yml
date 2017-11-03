@@ -1,6 +1,5 @@
 pipeline:
   web:
-    path: /Blueshift.Web
     image: microsoft/dotnet:2.0.0-sdk-2.0.2-jessie
     commands:
       - dotnet restore
