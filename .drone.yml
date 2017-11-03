@@ -9,8 +9,8 @@ pipeline:
       event: [ push ]
   notify:
     image: drillster/drone-email
-    host: ${email_host}
-    username: ${email_username}
-    password: ${email_password}
-    from: ${email_address}
+    host: "${email_host}"
+    username: "${email_username}"
+    password: "${email_password}"
+    from: "${email_address}"
     recipients: [ "${email_recipients}" ]
