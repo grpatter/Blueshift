@@ -13,4 +13,4 @@ pipeline:
     username: ${email_username}
     password: ${email_password}
     from: ${email_address}
-    recipients: [ ${email_recipients} ]
+    recipients: [ "${email_recipients}" ]
