@@ -7,3 +7,12 @@ pipeline:
     when:
       branch: master
       event: [ push ]
+  notify:
+    image: drillster/drone-email
+    host: $email_host
+    username: $email_username
+    password: $email_password
+    from: $email_address
+    recipients: [ $email_recipients ]
+    when:
+      status: [ changed, failure ]
