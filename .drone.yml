@@ -14,5 +14,4 @@ pipeline:
     password: $email_password
     from: $email_address
     recipients: [ $email_recipients ]
-    when:
-      status: [ changed, failure ]
+    
