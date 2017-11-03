@@ -9,7 +9,4 @@ ENV ASPNETCORE_ENVIRONMENT=Development
 
 EXPOSE 5000
 
-#RUN [ "dotnet", "restore" ]
-#ENTRYPOINT [ "dotnet", "watch", "run" ]
-
 ENTRYPOINT dotnet restore && dotnet watch run
